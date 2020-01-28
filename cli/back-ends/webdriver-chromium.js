@@ -55,8 +55,6 @@ exports.getPageData = async options => {
 		chromeOptions.addArguments("--disable-software-rasterizer");
 		chromeOptions.addArguments("--disable-dev-shm-usage");
 		chromeOptions.addArguments("--no-sandbox");
-		chromeOptions.addArguments("--remote-debugging-address=0.0.0.0");
-		chromeOptions.addArguments("--remote-debugging-port=9222");
 		if (!optionHeadless) {
 			if (options.browserDebug) {
 				chromeOptions.addArguments("--auto-open-devtools-for-tabs");
